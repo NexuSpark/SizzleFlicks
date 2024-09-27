@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SizzleFlicks</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>SizzleFlicks</h1>
+        </header>
+        <form>
+            <div id="age-group">
+                <label for="age">Edad:</label>
+                <input id="age" type="number" min="0" value="0">
+            </div>
+            <div id="genres">
+                <label for="genre">Género:</label>
+                <select id="genre">
+                    <option value="scifi">Ciencia ficción</option>
+                    <option value="fantasy">Fantasía</option>
+                    <option value="horror">Horror</option>
+                    <option value="animation">Animación</option>
+                </select>
+            </div>
+            <button type="submit">Mostrar Recomendaciones</button>
+        </form>
+        <article id="recommendations">
+            <h2>Recomendaciones</h2>
+            <ul id="movies"></ul>
+        </article>
+    </main>
+</body>
+</html>
