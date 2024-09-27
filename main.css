@@ -1,0 +1,83 @@
+:root {
+    --bg-green: #ade2b6;
+    --bg-orange: #fd9f2b;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, var(--bg-green), var(--bg-orange));
+}
+
+main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.film-strip {
+    display: flex;
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    width: fit-content;
+    transform: rotate(-5deg);
+    align-items: center;
+    gap: 0.3rem;
+    margin-bottom: 2rem;
+}
+
+.frame {
+    width: 100px;
+    height: 60px;
+    margin: 0 5px;
+    border: 2px solid black;
+    position: relative;
+}
+
+.frame::before,
+.frame::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.frame::before {
+    left: -5px;
+}
+
+.frame::after {
+    right: -5px;
+}
+
+h1 {
+    color: var(--bg-orange);
+}
+
+#frame-1 {
+    background-image: url("images/frame1.png");
+    background-size: cover;
+}
+
+#frame-2 {
+    background-image: url("images/frame2.png");
+    background-size: cover;
+}
+
+#frame-3 {
+    background-image: url("images/frame3.png");
+    background-size: cover;
+}
+
+#frame-4 {
+    background-image: url("images/frame4.png");
+    background-size: cover;
+}
